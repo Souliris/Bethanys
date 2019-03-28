@@ -42,7 +42,17 @@ namespace BethanysPieShop
                 app.UseDeveloperExceptionPage(); // debug only
                 app.UseStatusCodePages();
                 app.UseStaticFiles();
-                app.UseMvcWithDefaultRoute(); 
+                //app.UseMvcWithDefaultRoute(); 
+                app.UseMvc(routes =>
+                {
+                    routes.MapRoute(name: "default",
+                    template: "{controller=Home}/{action=Index}/{Id?}"
+                    );
+
+
+                }
+                
+                );//end app.usemvc block
             }
 
             
