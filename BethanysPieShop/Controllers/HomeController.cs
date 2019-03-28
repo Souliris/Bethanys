@@ -33,5 +33,6 @@ namespace BethanysPieShop.Controllers
             };
             return View(homeViewModel);
         }
-    }
-}
+
+    }//end class
+}//end namespace
