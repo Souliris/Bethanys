@@ -43,6 +43,8 @@ namespace BethanysPieShop
                 app.UseDeveloperExceptionPage(); // debug only
                 app.UseStatusCodePages();
                 app.UseStaticFiles();
+                app.UseAuthentication();
+
                 //app.UseMvcWithDefaultRoute(); 
                 app.UseMvc(routes =>
                 {
